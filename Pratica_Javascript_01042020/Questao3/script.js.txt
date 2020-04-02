@@ -1,0 +1,10 @@
+//Questao 3
+
+function Carregar(){
+  document.getElementById("paragrafo").innerHTML = "<img src='https://pngimage.net/wp-content/uploads/2018/05/carregando-png-6.png'>";
+  let sucesso = setTimeout(IndicarSucessoNoCarregamento,500);
+}
+
+function IndicarSucessoNoCarregamento(){
+  document.getElementById("paragrafo").innerHTML = "Carregado com sucesso";
+}

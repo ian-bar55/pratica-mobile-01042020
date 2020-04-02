@@ -1,0 +1,6 @@
+//Questao 1
+
+function Despertador(){
+  let tempo = window.prompt("Informe o tempo em milissegundos para o alerta ser disparado.");
+  let timer = setTimeout(alert('Despertador!'),tempo);
+}

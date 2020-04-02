@@ -1,0 +1,5 @@
+//Questao 2 
+
+function AvisarParaTomarAgua(){
+  let time = setInterval(alert('Lembre-se de tomar água!'), 60000);
+}

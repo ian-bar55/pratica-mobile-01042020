@@ -1,0 +1,9 @@
+<!-- Questao 3 -->
+<head>
+</head>  
+<body>
+<p id="paragrafo">
+  <button onClick="Carregar()">Carregar</button>
+</p>
+</body>
+<!-- Questao 3 -->
