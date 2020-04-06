@@ -1,0 +1,6 @@
+<head>
+  <h1>Recipes</h1>
+</head>
+<body>
+  <p id="paragrafo"></p>
+</body>

@@ -1,0 +1,19 @@
+//Questao 5
+
+//Aninhado
+//EscrevaNumeros(1, 10);
+let timerId = setTimeout(function EscrevaNumeros(inicio, fim) {
+  console.log(inicio);
+  inicio = inicio + 1;
+  if(fim - inicio < 0){
+    return;
+  }
+  timerId = setTimeout(EscrevaNumeros, 1000, inicio, fim);
+}, 1000, 1, 10);
+setTimeout(clearTimeout, (fim+1)*1000, timerId);
+
+//SetInterval
+function EscrevaNumerosInterval(inicio, fim){
+  let timerId = setInterval(() => console.log(inicio++), 1000);
+  setTimeout(() => { clearInterval(timerId); }, (fim+1)*1000);
+}

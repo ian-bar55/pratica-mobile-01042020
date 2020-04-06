@@ -1,0 +1,8 @@
+async function ExibirReceitas(){
+  receitastxt = await fetch("./receitas.json");
+  let receitasjson = JSON.parse(receitastxt);
+  let receitasObj = {};
+  receitasObj = JSON.parse(receitasjson);
+  document.getElementById('paragrafo').innerHTML = receitasObj.results;
+}
+

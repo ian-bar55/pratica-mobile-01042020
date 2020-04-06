@@ -1,0 +1,19 @@
+//Pergunta:
+
+No código abaixo tem uma função setTimeout agendada e depois um cálculo que
+demora 100ms para acabar. Quando será executada a função agendada?
+Depois do Loop
+Antes do Loop
+No começo do loop
+O que a mensagem de alerta irá mostrar?
+Código:
+let i = 0;
+setTimeout(() => alert(i), 100); // ?
+// Assuma que essa função demore mais que 100ms para executar
+for(let j = 0; j < 100000000; j++) {
+i++;
+}
+
+
+//Resposta:
+A função setTimeout será executada enquanto o loop ainda está executando, visto que o cálculo da função de loop demorará mais de 100ms, que é o tempo definido para a função setTimeout ser executada. Assim, a função setTimeout será executada após passados exatos 100ms e a mensagem de alerta mostrará o valor da variável i, o que significa que a variável i terá o valor do número de loops que foram executados no "for" até os 100ms terem passado, pois cada loop aumenta o valor de i em 1.

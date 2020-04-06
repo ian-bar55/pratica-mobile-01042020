@@ -1,0 +1,9 @@
+//Questao 4
+
+function escrevaNumeros(inicio, fim){
+  console.log(inicio);
+  if(inicio === fim){
+    return;
+  }
+  let timerId = setTimeout(escrevaNumeros, 1000, inicio + 1, fim);
+}

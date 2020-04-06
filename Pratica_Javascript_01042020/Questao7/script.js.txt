@@ -1,0 +1,10 @@
+function ExibirReceitas(){
+  receitastxt = fetch("./receitas.json")
+        .then(function(resposta){
+            return resposta.json();
+        });
+  let receitasObj = {};
+  receitasObj = JSON.parse(receitastxt);
+  document.getElementById('paragrafo').innerHTML = receitasObj.results;
+}
+
